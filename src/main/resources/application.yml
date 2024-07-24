@@ -1,0 +1,15 @@
+# The solver runs only for 5 seconds to avoid a HTTP timeout in this simple implementation.
+# It's recommended to run for at least 5 minutes ("5m") otherwise.
+timefold:
+  solver:
+    termination:
+      spent-limit: 5s
+  benchmark:
+    solver:
+      termination:
+        spent-limit: 15s
+
+
+logging:
+  level:
+    ai.timefold.solver: INFO
